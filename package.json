@@ -14,5 +14,9 @@
     "gulp-rename": "^1.2.2",
     "postcss-nested": "^1.0.0",
     "postcss-short": "^1.4.0"
+  },
+  "dependencies": {
+    "postcss-assets": "^4.0.1",
+    "postcss-cssnext": "^2.5.2"
   }
 }

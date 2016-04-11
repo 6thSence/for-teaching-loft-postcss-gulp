@@ -1,14 +1,11 @@
 var gulp = require('gulp');
 var rename =  require('gulp-rename');
 var postcss = require('gulp-postcss');
-var assets  = require('postcss-assets');
+var cssnext = require('postcss-cssnext');
 
 gulp.task('css', function () {
     var processors = [
-    assets({
-        loadPaths: ['src/assets/'],
-        relativeTo: 'src/styles/'
-        }),
+        cssnext,
     ];
     return gulp.src('./src/styles/stylesIn.css')
         .pipe(postcss(processors))

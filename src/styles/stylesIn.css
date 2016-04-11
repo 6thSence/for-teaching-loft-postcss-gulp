@@ -1,0 +1,46 @@
+:root {
+    --myGray: #c4c4c4;
+    --mainWidth: 800px;
+}
+
+
+body {
+    display: flex;
+
+    & .dog {
+        display: block;
+    }
+
+    color: var(--myGray);
+    width: calc(var(--mainWidth)/2);
+    height: calc(100*3/2)px;
+}
+
+
+@media (width >= 500px) and (width <= 900px) {
+    background: yellow;
+}
+
+
+@custom-media --medium-screen (width >= 500px) and (width <= 900px);
+
+@media (--medium-screen) {
+    body {
+        background: red;
+    }
+}
+
+
+@custom-selector :--button button, input[type='button'], .button, .btn;
+
+:--button {
+    display: none;
+}
+
+.content:matches(:hover, :active, .wrap, div) {
+    color: black;
+}
+
+.content:not(p, span) {
+    font-weight: bold;
+}

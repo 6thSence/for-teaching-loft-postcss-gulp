@@ -1,0 +1,41 @@
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    color: #c4c4c4;
+    width: 400px;
+    height: 150px;
+}
+
+
+body .dog {
+    display: block;
+}
+
+
+@media (min-width: 500px) and (max-width: 900px) {
+    background: yellow;
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    body {
+        background: red;
+    }
+}
+
+button,
+input[type='button'],
+.button,
+.btn {
+    display: none;
+}
+
+.content:hover, .content:active, .content.wrap, .contentdiv {
+    color: black;
+}
+
+.content:not(p):not(span) {
+    font-weight: bold;
+}
