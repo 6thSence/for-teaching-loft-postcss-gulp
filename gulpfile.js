@@ -5,7 +5,7 @@ var cssnext = require('postcss-cssnext');
 
 gulp.task('css', function () {
     var processors = [
-        cssnext,
+    cssnext,
     ];
     return gulp.src('./src/styles/stylesIn.css')
         .pipe(postcss(processors))

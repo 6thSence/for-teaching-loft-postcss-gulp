@@ -1,46 +1,27 @@
-:root {
-    --myGray: #c4c4c4;
-    --mainWidth: 800px;
-}
+.content {
+    color: color(red alpha(-10%));
 
-
-body {
-    display: flex;
-
-    & .dog {
-        display: block;
+    &:hover {
+        color: color(red blackness(80%));
+        background: gray(10%, 50%);
     }
 
-    color: var(--myGray);
-    width: calc(var(--mainWidth)/2);
-    height: calc(100*3/2)px;
-}
-
-
-@media (width >= 500px) and (width <= 900px) {
-    background: yellow;
-}
-
-
-@custom-media --medium-screen (width >= 500px) and (width <= 900px);
-
-@media (--medium-screen) {
-    body {
-        background: red;
+    &:active {
+        color: hwb(90, 0%, 0%, 0.5);
+        background: #9d9c;
     }
+
+    background: gray(85);
 }
 
-
-@custom-selector :--button button, input[type='button'], .button, .btn;
-
-:--button {
-    display: none;
+body p {
+    background: rebeccapurple;
 }
 
-.content:matches(:hover, :active, .wrap, div) {
-    color: black;
-}
-
-.content:not(p, span) {
-    font-weight: bold;
+.dog {
+    width: 500px;
+    height: 500px;
+    background: url(../assets/dog.jpg) center no-repeat;
+    background-size: cover;
+    filter: invert(75%);
 }

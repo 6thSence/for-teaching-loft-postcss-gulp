@@ -1,41 +1,29 @@
-body {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+.content {
+    color: rgba(255, 0, 0, 0.9);
 
-    color: #c4c4c4;
-    width: 400px;
-    height: 150px;
+    background: rgb(85, 85, 85);
 }
 
-
-body .dog {
-    display: block;
+.content:hover {
+    color: rgb(51, 0, 0);
+    background: rgba(26, 26, 26, 0.5);
 }
 
-
-@media (min-width: 500px) and (max-width: 900px) {
-    background: yellow;
+.content:active {
+    color: rgba(128, 255, 0, 0.5);
+    background: rgba(153, 221, 153, 0.8);
 }
 
-@media (min-width: 500px) and (max-width: 900px) {
-    body {
-        background: red;
-    }
+body p {
+    background: rgb(102, 51, 153);
 }
 
-button,
-input[type='button'],
-.button,
-.btn {
-    display: none;
-}
-
-.content:hover, .content:active, .content.wrap, .contentdiv {
-    color: black;
-}
-
-.content:not(p):not(span) {
-    font-weight: bold;
+.dog {
+    width: 500px;
+    height: 500px;
+    background: url(../assets/dog.jpg) center no-repeat;
+    background-size: cover;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.75 0.25" /><feFuncG type="table" tableValues="0.75 0.25" /><feFuncB type="table" tableValues="0.75 0.25" /></feComponentTransfer></filter></svg>#filter');
+    -webkit-filter: invert(75%);
+            filter: invert(75%);
 }
