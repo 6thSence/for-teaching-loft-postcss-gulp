@@ -18,7 +18,17 @@ body p {
     background: rgb(102, 51, 153);
 }
 
-.dog {
+.dog-in {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background: url(../assets/dog.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+.dog-out {
+    display: inline-block;
     width: 500px;
     height: 500px;
     background: url(../assets/dog.jpg) center no-repeat;
