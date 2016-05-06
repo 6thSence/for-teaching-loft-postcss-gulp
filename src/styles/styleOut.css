@@ -1,39 +1,9 @@
 .content {
-    color: rgba(255, 0, 0, 0.9);
-
-    background: rgb(85, 85, 85);
+    color: rgba(255, 0, 0, 0.9)
 }
-
 .content:hover {
-    color: rgb(51, 0, 0);
-    background: rgba(26, 26, 26, 0.5);
+    color: rgb(51, 0, 0)
 }
-
 .content:active {
-    color: rgba(128, 255, 0, 0.5);
-    background: rgba(153, 221, 153, 0.8);
-}
-
-body p {
-    background: rgb(102, 51, 153);
-}
-
-.dog-in {
-    display: inline-block;
-    width: 500px;
-    height: 500px;
-    background: url(../assets/dog.jpg) center no-repeat;
-    background-size: cover;
-}
-
-
-.dog-out {
-    display: inline-block;
-    width: 500px;
-    height: 500px;
-    background: url(../assets/dog.jpg) center no-repeat;
-    background-size: cover;
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.75 0.25" /><feFuncG type="table" tableValues="0.75 0.25" /><feFuncB type="table" tableValues="0.75 0.25" /></feComponentTransfer></filter></svg>#filter');
-    -webkit-filter: invert(75%);
-            filter: invert(75%);
+    color: rgba(128, 255, 0, 0.5)
 }
