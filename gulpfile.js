@@ -19,8 +19,10 @@ gulp.task('css', function () {
         .pipe(gulp.dest('./src/styles/'));
 });
 
-gulp.task('default', function() {
+gulp.task('watch', function() {
     gulp.watch('src/styles/stylesIn.css', function() {
         gulp.run('css');
     })
 })
+
+gulp.task('default', ['css', 'watch']);
